@@ -1,13 +1,17 @@
-import './App.css'
-import ArticulosBlog from './components/ArticulosBlog'
+import "./App.css";
+import ContenidoPrivado from "./components/ContenidoPrivado";
+import Header from "./components/Header";
+import Login from "./components/Login";
+import { UserProvider } from "./context/UserContext";
 
 function App() {
   return (
-    <>
-      <h1 style={{marginBlockStart: '0'}}>APIs con React y useEffect</h1>
-      <ArticulosBlog />
-    </>
-  )
+    <UserProvider>
+      <Header />
+      <Login />
+      <ContenidoPrivado />
+    </UserProvider>
+  );
 }
 
-export default App
+export default App;
