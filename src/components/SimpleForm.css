@@ -1,0 +1,8 @@
+.iput-error {
+ border: 1px solid #f00;
+}
+
+.error-message {
+    color: #f00;
+    font-size: 0.9rem; 
+}
